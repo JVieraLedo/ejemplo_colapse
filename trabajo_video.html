@@ -1,0 +1,89 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/ui-effects.min.js"></script>
+
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+.panel {
+    background-color: rgba(64,64,64,0.3) !important;
+    border: 0 !important;
+}
+.panel-default > .panel-heading {
+    background-color: rgba(64,64,64,0.6) !important;
+}
+.panel-default > .panel-heading:hover {
+    background-color: rgba(64,64,64,1) !important;
+}
+
+</style>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" style="position: relative;">
+                    <div class="col-md-12" style="position:absolute; top: 0px; left: 0px">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                              <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <a id="open">Click here to open</a>
+                                    <a id="close">Click here to close</a>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <iframe src="https://player.vimeo.com/video/126177413" width="100%" height="50%%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+        <div class="col-md-6" style="position: relative;">
+            <div class="col-md-12" style="position:absolute; top: 0px; left: 0px">
+                <div class="panel panel-default">
+                    <div id="zona_superior" class="panel-heading" role="tab" id="headingTwo">
+                      <h4 class="panel-title">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <a href="#" id="open_2">Click here to open</a>
+                            <a href="#" id="close_2">Click here to close</a>
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+            </div>
+        </div> 
+    </div>
+    <iframe src="https://player.vimeo.com/video/126177413" width="100%" height="50%%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</body>
+
+<script>
+$(document).ready(function() {
+        // Expand Panel
+        $("#open_2").click(function(){
+          $("div#collapseTwo").slideDown("slow", "easeOutBounce");
+      });   
+        // Collapse Panel
+        $("#close_2").click(function(){
+          $("div#collapseTwo").slideUp("slow");  
+      });     
+    });      
+</script>
+    </html>
+
+
